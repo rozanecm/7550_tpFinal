@@ -1,3 +1,4 @@
+pip install ipywidgets
 # from https://github.com/plotly/plotly.py#jupyterlab-support-python-35
 # Avoid "JavaScript heap out of memory" errors during extension installation
 # (OS X/Linux)
