@@ -19,6 +19,7 @@ jupyter-core==4.4.0
 jupyterlab==0.35.4
 jupyterlab-server==0.2.0
 kiwisolver==1.0.1
+lightgbm==2.2.2
 MarkupSafe==1.1.0
 matplotlib==3.0.2
 mistune==0.8.4
@@ -59,3 +60,4 @@ urllib3==1.24.1
 wcwidth==0.1.7
 webencodings==0.5.1
 widgetsnbextension==3.4.2
+xgboost==0.81
