@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="major_version <= 1.5\ngini = 0.36\nsamples = 4515\nvalue = [1668, 5499]\nclass = succ", fillcolor="#399de5b2"] ;
+1 [label="rating_count_tot <= 702.5\ngini = 0.38\nsamples = 2604\nvalue = [1065, 3096]\nclass = succ", fillcolor="#399de5a7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="lang.num <= 0.5\ngini = 0.41\nsamples = 1816\nvalue = [832, 2065]\nclass = succ", fillcolor="#399de598"] ;
+1 -> 2 ;
+3 [label="gini = 0.44\nsamples = 13\nvalue = [10, 5]\nclass = not succ", fillcolor="#e581397f"] ;
+2 -> 3 ;
+4 [label="gini = 0.41\nsamples = 1803\nvalue = [822, 2060]\nclass = succ", fillcolor="#399de599"] ;
+2 -> 4 ;
+5 [label="rating_count_ver <= 50052.5\ngini = 0.3\nsamples = 788\nvalue = [233, 1031]\nclass = succ", fillcolor="#399de5c5"] ;
+1 -> 5 ;
+6 [label="gini = 0.3\nsamples = 785\nvalue = [230, 1029]\nclass = succ", fillcolor="#399de5c6"] ;
+5 -> 6 ;
+7 [label="gini = 0.48\nsamples = 3\nvalue = [3, 2]\nclass = not succ", fillcolor="#e5813955"] ;
+5 -> 7 ;
+8 [label="vpp_lic <= 0.5\ngini = 0.32\nsamples = 1911\nvalue = [603, 2403]\nclass = succ", fillcolor="#399de5bf"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="size_bytes <= 100211712.0\ngini = 0.5\nsamples = 8\nvalue = [6, 6]\nclass = not succ", fillcolor="#e5813900"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 4\nvalue = [6, 0]\nclass = not succ", fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 4\nvalue = [0, 6]\nclass = succ", fillcolor="#399de5ff"] ;
+9 -> 11 ;
+12 [label="user_rating <= 3.25\ngini = 0.32\nsamples = 1903\nvalue = [597, 2397]\nclass = succ", fillcolor="#399de5bf"] ;
+8 -> 12 ;
+13 [label="gini = 0.4\nsamples = 390\nvalue = [171, 446]\nclass = succ", fillcolor="#399de59d"] ;
+12 -> 13 ;
+14 [label="gini = 0.29\nsamples = 1513\nvalue = [426, 1951]\nclass = succ", fillcolor="#399de5c7"] ;
+12 -> 14 ;
+}
