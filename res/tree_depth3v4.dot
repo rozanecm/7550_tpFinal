@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="vpp_lic <= 0.5\ngini = 0.37\nsamples = 4515\nvalue = [1748, 5419]\nclass = succ", fillcolor="#399de5ad"] ;
+1 [label="price <= 5.49\ngini = 0.49\nsamples = 31\nvalue = [22, 27]\nclass = succ", fillcolor="#399de52f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+13 [label="gini = 0.46\nsamples = 22\nvalue = [12, 22]\nclass = succ", fillcolor="#399de574"] ;
+1 -> 13 ;
+14 [label="size_bytes <= 1817561088.0\ngini = 0.44\nsamples = 9\nvalue = [10, 5]\nclass = not succ", fillcolor="#e581397f"] ;
+1 -> 14 ;
+15 [label="gini = 0.32\nsamples = 4\nvalue = [1, 4]\nclass = succ", fillcolor="#399de5bf"] ;
+14 -> 15 ;
+16 [label="gini = 0.18\nsamples = 5\nvalue = [9, 1]\nclass = not succ", fillcolor="#e58139e3"] ;
+14 -> 16 ;
+2 [label="ipadSc_urls.num <= 4.5\ngini = 0.37\nsamples = 4484\nvalue = [1726, 5392]\nclass = succ", fillcolor="#399de5ad"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="lang.num <= 4.5\ngini = 0.35\nsamples = 1662\nvalue = [593, 2049]\nclass = succ", fillcolor="#399de5b5"] ;
+2 -> 3 ;
+5 [label="gini = 0.38\nsamples = 1266\nvalue = [514, 1492]\nclass = succ", fillcolor="#399de5a7"] ;
+3 -> 5 ;
+6 [label="gini = 0.22\nsamples = 396\nvalue = [79, 557]\nclass = succ", fillcolor="#399de5db"] ;
+3 -> 6 ;
+4 [label="price <= 7.49\ngini = 0.38\nsamples = 2822\nvalue = [1133, 3343]\nclass = succ", fillcolor="#399de5a9"] ;
+2 -> 4 ;
+7 [label="size_bytes <= 90162176.0\ngini = 0.38\nsamples = 2720\nvalue = [1110, 3205]\nclass = succ", fillcolor="#399de5a7"] ;
+4 -> 7 ;
+9 [label="gini = 0.34\nsamples = 944\nvalue = [331, 1188]\nclass = succ", fillcolor="#399de5b8"] ;
+7 -> 9 ;
+10 [label="sup_devices.num <= 41.5\ngini = 0.4\nsamples = 1776\nvalue = [779, 2017]\nclass = succ", fillcolor="#399de59d"] ;
+7 -> 10 ;
+11 [label="gini = 0.41\nsamples = 1691\nvalue = [758, 1903]\nclass = succ", fillcolor="#399de599"] ;
+10 -> 11 ;
+12 [label="gini = 0.26\nsamples = 85\nvalue = [21, 114]\nclass = succ", fillcolor="#399de5d0"] ;
+10 -> 12 ;
+8 [label="gini = 0.24\nsamples = 102\nvalue = [23, 138]\nclass = succ", fillcolor="#399de5d4"] ;
+4 -> 8 ;
+}

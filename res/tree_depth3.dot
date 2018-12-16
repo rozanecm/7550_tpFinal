@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="vpp_lic <= 0.5\ngini = 0.36\nsamples = 4510\nvalue = [1676, 5491]\nclass = succ", fillcolor="#399de5b1"] ;
+1 [label="lang.num <= 1.5\ngini = 0.49\nsamples = 29\nvalue = [19, 24]\nclass = succ", fillcolor="#399de535"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="rating_count_previo <= 22.5\ngini = 0.48\nsamples = 22\nvalue = [19, 13]\nclass = not succ", fillcolor="#e5813951"] ;
+1 -> 2 ;
+3 [label="gini = 0.27\nsamples = 12\nvalue = [16, 3]\nclass = not succ", fillcolor="#e58139cf"] ;
+2 -> 3 ;
+4 [label="gini = 0.36\nsamples = 10\nvalue = [3, 10]\nclass = succ", fillcolor="#399de5b3"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 7\nvalue = [0, 11]\nclass = succ", fillcolor="#399de5ff"] ;
+1 -> 5 ;
+6 [label="lang.num <= 5.5\ngini = 0.36\nsamples = 4481\nvalue = [1657, 5467]\nclass = succ", fillcolor="#399de5b2"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="size_bytes <= 127288832.0\ngini = 0.38\nsamples = 3141\nvalue = [1258, 3693]\nclass = succ", fillcolor="#399de5a8"] ;
+6 -> 7 ;
+8 [label="gini = 0.36\nsamples = 2048\nvalue = [773, 2463]\nclass = succ", fillcolor="#399de5af"] ;
+7 -> 8 ;
+9 [label="gini = 0.41\nsamples = 1093\nvalue = [485, 1230]\nclass = succ", fillcolor="#399de59a"] ;
+7 -> 9 ;
+10 [label="rating_count_tot <= 596.0\ngini = 0.3\nsamples = 1340\nvalue = [399, 1774]\nclass = succ", fillcolor="#399de5c6"] ;
+6 -> 10 ;
+11 [label="gini = 0.39\nsamples = 482\nvalue = [210, 571]\nclass = succ", fillcolor="#399de5a1"] ;
+10 -> 11 ;
+12 [label="gini = 0.23\nsamples = 858\nvalue = [189, 1203]\nclass = succ", fillcolor="#399de5d7"] ;
+10 -> 12 ;
+}
