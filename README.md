@@ -5,4 +5,4 @@ To fix plotly error (plotly not plotting some plots), run `bash plotly_jupyter_l
 # Decision tree
 To generate the decision tree, graphviz is needed. Install by `sudo apt-get install graphviz`.
 # Informe
-Todo el trabajo desarrollado se encuentra redactado en el [informe]('TP final.pdf').
+Todo el trabajo desarrollado se encuentra redactado en el [informe](TP&#32;final.pdf).
